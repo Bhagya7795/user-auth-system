@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hidden by default until identity verification succeeds -->
+    <div id="dashboard-container" class="dashboard-card hidden">
+        <h2 id="welcome-message">Welcome!</h2>
+        
+        <div class="profile-info">
+            <h3>Your Profile Metadata</h3>
+            <p><strong>Account Role:</strong> <span id="user-role"></span></p>
+            <p><strong>Registered Email:</strong> <span id="user-email"></span></p>
+            <p><strong>Account Created:</strong> <span id="user-date"></span></p>
+        </div>
+        
+        <button id="logout-btn" class="danger-btn">Log Out Securely</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
